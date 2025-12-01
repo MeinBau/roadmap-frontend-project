@@ -12,7 +12,7 @@ function App() {
     <div className='container'>
       <Tabs currentTab={currentTab} clickTab={clickTab}/>
       <div style={{width: '550px', height: '400px' }}>
-        <p>tmp</p>
+        <p>{tabsData[currentTab].text}</p>
       </div>
     </div>
   );
