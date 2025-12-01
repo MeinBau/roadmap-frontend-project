@@ -1,0 +1,20 @@
+{
+    "tabsData": [
+        {
+            "id" : 0,
+            "text": "This is the first tab. Clicking each tab should hide the content of the other tab and show the content of the clicked tab. By default, enable the first tab."
+        },
+        {
+            "id" : 1,
+            "text": "This isn't the third tab."
+        },
+        {
+            "id" : 2,
+            "text": "This isn't the second tab."
+        },
+        {
+            "id" : 3,
+            "text": "This is the last tab."
+        }
+    ]
+}
