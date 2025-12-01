@@ -1,14 +1,18 @@
 import './App.css';
-import TabButton from './components/TabButton';
+import Tabs from './components/Tabs';
+import example1 from './data/example1.json'
+
+import { useState, useEffect } from 'react';
 
 function App() {
+  const tabsData = example1.tabsData;
+  const [currentTab, clickTab] = useState(0);
+
   return (
     <div className='container'>
-      <div>
-        <TabButton text='First Tab' isActive={true}></TabButton>
-        <TabButton text='Second Tab' isActive={false}></TabButton>
-        <TabButton text='Third Tab' isActive={false}></TabButton>
-        <TabButton text='Fourth Tab' isActive={false}></TabButton>
+      <Tabs currentTab={currentTab} clickTab={clickTab}/>
+      <div style={{width: '550px', height: '400px' }}>
+        <p>tmp</p>
       </div>
     </div>
   );

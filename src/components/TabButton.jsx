@@ -14,9 +14,10 @@ const tab= {
     padding: '8px 16px',
 }
 
-function TabButton(props){
+
+function TabButton({idx, clickTab, text, isActive}){
     return (
-        <span style={(props.isActive) ? tabActive : tab}>{props.text}</span>
+        <span style={(isActive) ? tabActive : tab} onClick={()=>clickTab(idx)}>{text}</span>
     );
 }
 

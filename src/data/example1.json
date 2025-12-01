@@ -1,0 +1,20 @@
+{
+    "tabsData": [
+        {
+            "id" : 0,
+            "text": "This is the first tab. Clicking each tab should hide the content of the other tab and show the content of the clicked tab. By default, enable the first tab."
+        },
+        {
+            "id" : 1,
+            "text": "Der Bau ist eine 1923–1924 entstandene, unvollendete Erzählung von Franz Kafka, die postum erstmals 1928 in der Zeitschrift Witiko und 1931 von Max Brod[1] veröffentlicht wurde."
+        },
+        {
+            "id" : 2,
+            "text": "The Castle (German: Das Schloss, also spelled Das Schloß [das ʃlɔs]) is the last novel by Franz Kafka, first published in 1926. In it a protagonist known only as \"K\" arrives in a village and struggles to gain access to the mysterious authorities who govern it from a castle supposedly owned by Graf Westwest."
+        },
+        {
+            "id" : 3,
+            "text": "This is the last tab."
+        }
+    ]
+}
