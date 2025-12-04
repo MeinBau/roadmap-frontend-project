@@ -9,8 +9,11 @@ function App() {
   return (
     <>
       <h1 className='head'>Age Calculator</h1>
-      <h1>tmp1</h1>
+      <div className='input-container'>
+        <p style={{textAlign: 'left'}}>Enter your birth date:</p>
+      </div>
       <h1>tmp2</h1>
+      <button>tmp3</button>
       <AgeDisplay now={now} birthday={birthday}/>
     </>
   )
