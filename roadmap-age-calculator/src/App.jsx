@@ -1,5 +1,6 @@
 import { DateTime } from 'luxon';
 import AgeDisplay from './component/AgeDisplay';
+import './App.css';
 
 function App() {
   const now = DateTime.fromISO('20251203');
@@ -7,6 +8,9 @@ function App() {
 
   return (
     <>
+      <h1 className='head'>Age Calculator</h1>
+      <h1>tmp1</h1>
+      <h1>tmp2</h1>
       <AgeDisplay now={now} birthday={birthday}/>
     </>
   )

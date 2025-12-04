@@ -2,7 +2,7 @@ import './App.css';
 import Tabs from './components/Tabs';
 import example1 from './data/example1.json'
 
-import { useState} from 'react';
+import { useState } from 'react';
 
 function App() {
   const tabsData = example1.tabsData;
