@@ -8,7 +8,7 @@ import "react-datepicker/dist/react-datepicker.css"
 function App() {
   const now = DateTime.now();
   let [birthday, setBirthday] = useState(DateTime.fromISO('not a date'));
-  let [date, setDate] = useState(new Date());
+  let [date, setDate] = useState(new Date('2000/01/01'));
   const update = function(){setBirthday(DateTime.fromISO(String(date.getFullYear()) + String(date.getMonth() + 1).padStart(2, '0') + String(date.getDate()).padStart(2, '0')))}   
   return (
     <div className='container'>
