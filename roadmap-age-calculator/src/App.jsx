@@ -6,11 +6,10 @@ import DatePick from './component/DatePick';
 import "react-datepicker/dist/react-datepicker.css"
 
 function App() {
-  const now = DateTime.fromISO('20251203');
-  let [birthday, setBirthday] = useState(DateTime.fromISO('2004-11-02'));
+  const now = DateTime.now();
+  let [birthday, setBirthday] = useState(DateTime.fromISO('not a date'));
   let [date, setDate] = useState(new Date());
-  const update = function(){console.log(`${date.getFullYear()}, ${date.getMonth()+1}`)}
-
+  const update = function(){setBirthday(DateTime.fromISO(String(date.getFullYear()) + String(date.getMonth() + 1).padStart(2, '0') + String(date.getDate()).padStart(2, '0')))}   
   return (
     <div className='container'>
       <h1 className='head'>Age Calculator</h1>
